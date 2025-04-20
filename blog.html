@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gimnasio GoodLife</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">GoodLife</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clases</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="clases.html">Musculación</a>
+              <li><a class="dropdown-item" href="clases.html">CrossFit</a>
+              <li><a class="dropdown-item" href="clases.html">Yoga</a>
+              <li><a class="dropdown-item" href="clases.html">Spinning</a>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="entrenadores.html">Entrenadores</a></li>
+          <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
+    
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Blog de Fitness</h2>
+  
+    <!-- Filtros -->
+    <div class="text-center mb-4">
+      <button class="btn btn-outline-secondary blog-filter" data-filter="*">Todos</button>
+      <button class="btn btn-outline-secondary blog-filter" data-filter=".nutricion">Nutrición</button>
+      <button class="btn btn-outline-secondary blog-filter" data-filter=".entrenamiento">Entrenamiento</button>
+      <button class="btn btn-outline-secondary blog-filter" data-filter=".bienestar">Bienestar</button>
+    </div>
+  
+    <!-- Artículos -->
+    <div class="row g-4 blog-grid">
+      <div class="col-md-4 blog-item nutricion mi-seccion">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Comidas post entrenamiento</h5>
+            <p class="card-text">Descubrí qué alimentos favorecen tu recuperación muscular.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 blog-item entrenamiento mi-seccion">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Rutina full body en casa</h5>
+            <p class="card-text">Entrená sin equipo y activá todo el cuerpo en 30 minutos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 blog-item bienestar mi-seccion">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Beneficios de dormir bien</h5>
+            <p class="card-text">El sueño es clave para tu rendimiento físico y mental.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 blog-item nutricion mi-seccion">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Snacks saludables</h5>
+            <p class="card-text">Ideas fáciles para comer bien entre comidas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 blog-item bienestar mi-seccion">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Beneficios de duchas frias</h5>
+            <p class="card-text">Las duchas calentitas son buenas, pero las frias traen bastantes beneficios.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 blog-item entrenamiento mi-seccion">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Practicar Respiracion</h5>
+            <p class="card-text">Inhala por la nariz y exhala por la boca, pratica esto y tendras mas resistencia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comentarios -->
+  <section class="container my-5">
+    <h4>Comentarios</h4>
+    <div class="d-flex align-items-start mb-3">
+      <img src="img/kevin.jpg" class="rounded-circle me-3" width="50" height="50" alt="Avatar">
+      <div>
+        <strong>Kevin</strong>
+        <p>Buenos consejos, tratare de buscarlos y resivar mas en el internet</p>
+      </div>
+    </div>
+    <div class="d-flex align-items-start mb-3">
+      <img src="img/mamani.jpg" class="rounded-circle me-3" width="50" height="50" alt="Avatar">
+      <div>
+        <strong>Mamani</strong>
+        <p>Lamentable que la pagina no proporcione mas informacion en estos blogs</p>
+      </div>
+    </div>
+    <div class="d-flex align-items-start mb-3">
+      <img src="img/cayo.jpg" class="rounded-circle me-3" width="50" height="50" alt="Avatar">
+      <div>
+        <strong>Cayo</strong>
+        <p>El programador esta abrumado, dejalo</p>
+      </div>
+    </div>
+    <div class="d-flex align-items-start mb-3">
+      <img src="img/mamani.jpg" class="rounded-circle me-3" width="50" height="50" alt="Avatar">
+      <div>
+        <strong>Mamani</strong>
+        <p>😂</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="bg-light py-4">
+  <div class="container">
+    <!-- Formulario -->
+    <form id="contact-form">
+      <h3>Suscribite a nuestro Newsletter</h3>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" placeholder="Correo Electronico" id="email" required>
+        <div class="invalid-feedback">Ingresá un correo válido</div>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        Suscribirme
+        <span id="spinner" class="spinner-border spinner-border-sm d-none"></span>
+      </button>
+    </form>
+    
+    <!-- Mapa con Iframe -->
+    <div class="mt-4">
+      <h3>¿Dónde nos podes encontrar?</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.377479378767!2d-65.2996320918967!3d-24.19355574111945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0fd055b2d973%3A0x91a1f335fee3ca4e!2sKrown%20Gym!5e0!3m2!1ses!2sar!4v1744034802413!5m2!1ses!2sar" 
+         
+        height="150" 
+        style="border:0;">
+      </iframe>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal de confirmación -->
+<div class="modal fade" id="confirmModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-body text-center">
+      <p>¡Formulario enviado con éxito!</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal().reveal('.mi-seccion', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '50px',
+    easing: 'ease-in-out',
+    reset: true 
+  });
+</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio GoodLife</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Header con mega menu -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">GoodLife</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clases</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="clases.html">Musculación</a>
+              <li><a class="dropdown-item" href="clases.html">CrossFit</a>
+              <li><a class="dropdown-item" href="clases.html">Yoga</a>
+              <li><a class="dropdown-item" href="clases.html">Spinning</a>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="entrenadores.html">Entrenadores</a></li>
+          <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container">
+    <!-- Filtros -->
+    <div class="container text-center my-5">
+      <button class="btn btn-outline-primary filter-btn" data-filter="*">Todas</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter=".musculacion">Musculacion</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter=".yoga">Yoga</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter=".crossfit">CrossFit</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter=".spinning">Spinning</button>
+    </div>
+    <!-- Clases -->
+    <div class="container">
+      <div class="row g-4 grid">
+        <div class="col-md-4 grid-item musculacion">
+          <div class="card zoom">
+            <img src="img/MusculacionPrincipiante.jpg" class="card-img-top" alt="musculacion">
+            <div class="card-body">
+              <h5 class="card-title">Musculación Principante</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 grid-item crossfit">
+          <div class="card zoom">
+            <img src="img/CrossfitPrincipiante.jpg" class="card-img-top" alt="crossfit">
+            <div class="card-body">
+              <h5 class="card-title">Crossfit Principante</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 grid-item yoga">
+          <div class="card zoom">
+            <img src="img/YogaPrincipiante.jpg" class="card-img-top" alt="yoga">
+            <div class="card-body">
+              <h5 class="card-title">Yoga Principante</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 grid-item spinning">
+          <div class="card zoom">
+            <img src="img/Spinning2.jpg" class="card-img-top" alt="spinning">
+            <div class="card-body">
+              <h5 class="card-title">Spinning</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 grid-item musculacion">
+          <div class="card zoom">
+            <img src="img/MusculacionAvanzado.jpg" class="card-img-top" alt="musculacion">
+            <div class="card-body">
+              <h5 class="card-title">Musculación Avanzado</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 grid-item crossfit">
+          <div class="card zoom">
+            <img src="img/CrossfitAvanzado.jpg" class="card-img-top" alt="crossfit">
+            <div class="card-body">
+              <h5 class="card-title">Crossfit Avanzado</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 grid-item yoga">
+          <div class="card zoom">
+            <img src="img/YogaAvanzado.jpg" class="card-img-top" alt="yoga">
+            <div class="card-body">
+              <h5 class="card-title">Yoga Avanzado</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 grid-item spinning">
+          <div class="card zoom">
+            <img src="img/SpinningForCiclysm.jpg" class="card-img-top" alt="spinning">
+            <div class="card-body">
+              <h5 class="card-title">Spinning Para Ciclismo</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container my-5">
+    <div class="table-responsive">
+      <table class="table table-striped table-hover text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>Día</th>
+            <th>Clase</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Lunes</td><td>CrossFit</td><td>08:00 - 10:00</td></tr>
+          <tr><td>Lunes</td><td>Musculacion</td><td>14:00 - 16:00</td></tr>
+          <tr><td>Martes</td><td>Yoga</td><td>09:00 - 10:00</td></tr>
+          <tr><td>Martes</td><td>Spinning</td><td>15:00 - 17:00</td></tr>
+          <tr><td>Miércoles</td><td>Musculación</td><td>08:00 - 10:00</td></tr>
+          <tr><td>Jueves</td><td>Yoga</td><td>10:00 - 12:00</td></tr>
+          <tr><td>Jueves</td><td>Spinning</td><td>14:00 - 15:00</td></tr>
+          <tr><td>Viernes</td><td>Crossfit</td><td>08:00 - 10:00</td></tr>
+          <tr><td>Viernes</td><td>Crossfit</td><td>16:00 - 18:00</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="bg-light py-4">
+  <div class="container">
+    <!-- Formulario -->
+    <form id="contact-form">
+      <h3>Suscribite a nuestro Newsletter</h3>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" placeholder="Correo Electronico" id="email" required>
+        <div class="invalid-feedback">Ingresá un correo válido</div>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        Suscribirme
+        <span id="spinner" class="spinner-border spinner-border-sm d-none"></span>
+      </button>
+    </form>
+    
+    <!-- Mapa con Iframe -->
+    <div class="mt-4">
+      <h3>¿Dónde nos podes encontrar?</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.377479378767!2d-65.2996320918967!3d-24.19355574111945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0fd055b2d973%3A0x91a1f335fee3ca4e!2sKrown%20Gym!5e0!3m2!1ses!2sar!4v1744034802413!5m2!1ses!2sar" 
+         
+        height="150" 
+        style="border:0;">
+      </iframe>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal de confirmación -->
+<div class="modal fade" id="confirmModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-body text-center">
+      <p>¡Formulario enviado con éxito!</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

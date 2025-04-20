@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio GoodLife</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Header con mega menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">GoodLife</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clases</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="clases.html">Musculación</a>
+                  <li><a class="dropdown-item" href="clases.html">CrossFit</a>
+                  <li><a class="dropdown-item" href="clases.html">Yoga</a>
+                  <li><a class="dropdown-item" href="clases.html">Spinning</a>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="entrenadores.html">Entrenadores</a></li>
+              <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+    </header>
+
+    <!-- Hero con video de fondo -->
+    <section class="hero position-relative">
+        <video autoplay muted loop class="position-absolute w-100 h-100 object-fit-cover">
+          <source src="img/Fitness.mp4" type="video/mp4">
+        </video>
+        <div class="overlay py-5 w-100 h-100 d-flex align-items-center justify-content-center text-white text-center">
+          <h1 class="display-4">Si te esfuerzas por tu meta, la conseguiras</h1>
+          <p class="lead">Unete a uno de nuestros 500 socios que ya lo lograron</p>
+        </div>
+    </section>
+
+    <!-- Clases destacadas -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Algunas de nuestras clases destacadas</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card clase-card shadow-sm">
+              <img class="card-img-top" src="img/musculacion.jpg" alt="Clase de Musculación">
+              <div class="card-body">
+                <h3 class="card-title">Musculación</h3>
+                <p class="card-text">Entrenamientos de fuerza para ganar masa muscular y fuerza</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card clase-card shadow-sm">
+              <img class="card-img-top" src="img/yoga.jpg" alt="Clase de Yoga">
+              <div class="card-body">
+                <h3 class="card-title">Yoga</h3>
+                <p class="card-text">Relajación y Estiramiento</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card clase-card shadow-sm">
+              <img class="card-img-top" src="img/spinning.jpg" alt="Clase de Spinning">
+              <div class="card-body">
+                <h3 class="card-title">Spinning</h3>
+                <p class="card-text">Cardio intenso al ritmo de la música</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contador animado -->
+    <div class="bg-dark text-white py-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <span class="counter" data-target="1000">0</span>
+            <p>Socios</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrusel de testimonios -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Lo que dicen nuestros socios</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <p>"Gracias al gimnasio GoodLife pude superar este bloqueo que tenia durante la pandemia"</p>
+            <h4>- Alejandro, 21 años</h4>
+          </div>
+          <div class="carousel-item">
+            <p>"Soy ciclista y me ayudo mucho el spinning del lugar"</p>
+            <h4>- Juan, 27 años</h4>
+          </div>
+          <div class="carousel-item">
+            <p>"Me sirve como pasatiempo y me ayuda a combatir contra mi sedentarismo"</p>
+            <h4>- Luca, 19 años</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container">
+          <!-- Formulario -->
+          <form id="contact-form">
+            <h3>Suscribite a nuestro Newsletter</h3>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" placeholder="Correo Electronico" id="email" required>
+              <div class="invalid-feedback">Ingresá un correo válido</div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Suscribirme
+              <span id="spinner" class="spinner-border spinner-border-sm d-none"></span>
+            </button>
+          </form>
+          
+          <!-- Mapa con Iframe -->
+          <div class="mt-4">
+            <h3>¿Dónde nos podes encontrar?</h3>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.377479378767!2d-65.2996320918967!3d-24.19355574111945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0fd055b2d973%3A0x91a1f335fee3ca4e!2sKrown%20Gym!5e0!3m2!1ses!2sar!4v1744034802413!5m2!1ses!2sar" 
+              height="150" 
+              style="border:0;">
+            </iframe>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Modal de confirmación -->
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <p>¡Formulario enviado con éxito!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
